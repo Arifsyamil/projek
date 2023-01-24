@@ -69,10 +69,10 @@ with st.container():
 	else:
 		df_test = malaya_model(btn_model, kata)
 	
-	entiti = sorted(df_test['entiti'].unique())
-	pilih = st.multiselect('Jenis entiti', entiti, entiti)
-	df_pilihan = df_test [ (df_test['entiti'].isin(pilih)) ]
-	st.table(df_pilihan.style.set_properties(**{'background-color': 'white', 'color': 'black'}))
+entiti = sorted(df_test['entiti'].unique())
+pilih = st.multiselect('Jenis entiti', entiti, entiti)
+df_pilihan = df_test [ (df_test['entiti'].isin(pilih)) ]
+st.table(df_pilihan.style.set_properties(**{'background-color': 'white', 'color': 'black'}))
 
 #About model
 with st.expander("About this app", expanded=True):
