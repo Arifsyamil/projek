@@ -33,7 +33,7 @@ with st.form(key= 'my_form'):
 	kata = st.text_area(label="Sila taip teks atau ayat:", max_chars= 500)
 	
 	btn_model = st.radio("Pilih model untuk pengecaman entiti nama",
-	("BERT", "Tiny-BERT", "ALBERT", "Tiny-ALBERT", "XLNET", "ALXLNET", "FASTFORMER", "Tiny-FASTFORMER", "KNN"))
+	("KNN", "BERT", "Tiny-BERT", "ALBERT", "Tiny-ALBERT", "XLNET", "ALXLNET", "FASTFORMER", "Tiny-FASTFORMER"))
 	
 	submit_button = st.form_submit_button(label= ":arrow_right: Buat Ramalan")
 	
